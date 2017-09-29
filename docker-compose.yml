@@ -14,3 +14,5 @@ services:
       - "7001:8080"
     volumes:
       - ./:/code
+    environment:
+      - RPC_HOST=testrpc
