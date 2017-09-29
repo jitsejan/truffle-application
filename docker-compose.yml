@@ -1,0 +1,16 @@
+version: '2'
+services:
+  testrpc:
+    image: jitsejan/testrpc
+    command: bash -c "testrpc -h 0.0.0.0"
+    ports:
+      - "7000:8545"
+  truffle3:
+    image: jitsejan/truffle-application
+    command: bash
+    stdin_open: true
+    tty: true
+    ports:
+      - "7001:8080"
+    volumes:
+      - ./:/code
