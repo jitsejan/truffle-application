@@ -8,5 +8,3 @@ RUN mkdir /code
 WORKDIR /code
 # Install Truffle
 RUN npm install -g truffle
-# Entry point
-ENTRYPOINT ["truffle"]
